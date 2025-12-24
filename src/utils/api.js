@@ -1,7 +1,9 @@
 import axios from 'axios';
+import { config } from 'dotenv';
+config();
 
 export const api = axios.create({
-    baseURL: process.env.BACKEND_URL || 'http://localhost:9000',
+    baseURL: process.env.BACKEND_URL || 'http://localhost:9000/api',
     timeout: 5000,
 });
 
