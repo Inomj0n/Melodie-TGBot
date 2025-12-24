@@ -47,7 +47,7 @@ export const albumCallback = async (ctx) => {
             return ctx.answerCbQuery();
         }
 
-        const albumId = action === "no_album" ? "694bb7ae553ac43e9a5d9aab" : action;
+        const albumId = action === "no_album" ? "694bd7dafc4737e0cdb5788a" : action;
 
         await addMusic({
             title: ctx.session.pendingMusic.title,
